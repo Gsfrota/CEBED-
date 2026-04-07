@@ -614,6 +614,7 @@ export default function App() {
               <div className="grid sm:grid-cols-2 gap-3 mb-5">
                 {[
                   { label: 'Epilepsia', texto: 'CBD e epilepsia: o que este estudo mostrou', slug: 'epilepsia-dravet-cannabidiol', pmid: '28538134' },
+                  { label: 'Epilepsia', texto: 'CBD em epilepsias resistentes: eficácia e segurança em 4 anos', slug: 'epilepsia-resistente-cbd-longo-prazo', pmid: '36537757' },
                   { label: 'Distúrbios do Sono', texto: 'Cannabis medicinal e insônia: o que a pesquisa observou', slug: 'insonia-cannabis-medicinal', pmid: '34115851' },
                   { label: 'Dor Crônica', texto: 'Cannabis e dor crônica: principais achados do estudo', slug: 'dor-cronica-cannabis', pmid: '32445190' },
                   { label: 'Espectro Autista', texto: 'CBD no autismo: resultados observados em crianças', slug: 'autismo-cbd', pmid: '35617670' },
@@ -641,7 +642,7 @@ export default function App() {
                   Explorar base científica
                   <ArrowRight size={14} />
                 </a>
-                <span className="text-xs text-slate-400">5 estudos · Leitura simplificada · Referências reais</span>
+                <span className="text-xs text-slate-400">6 estudos · Leitura simplificada · Referências reais</span>
               </div>
             </div>
           </Reveal>
