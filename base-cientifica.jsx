@@ -58,7 +58,7 @@ export default function BaseCientifica() {
                 <Library size={12} />
                 Centro de Base Científica
               </span>
-              <span className="text-xs text-slate-400 font-medium">5 estudos revisados</span>
+              <span className="text-xs text-slate-400 font-medium">6 estudos revisados</span>
             </div>
           </div>
           <div className="fade-up" style={{ animationDelay: '160ms', opacity: 0 }}>
@@ -120,7 +120,7 @@ export default function BaseCientifica() {
             <div className="mb-10 md:mb-14">
               <p className="text-xs font-bold tracking-widest text-[#3F964F] uppercase mb-2">Estudos em destaque</p>
               <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-                5 estudos selecionados
+                6 estudos selecionados
               </h2>
             </div>
           </Reveal>
