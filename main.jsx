@@ -365,7 +365,7 @@ export default function App() {
       </nav>
 
       {/* ═══ 2. HERO ═══ */}
-      <header className="relative pt-28 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col md:justify-center overflow-hidden">
+      <header className="relative pt-36 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col md:justify-center overflow-hidden">
         <MouseGlow />
 
         {/* Blobs decorativos */}
