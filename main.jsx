@@ -386,9 +386,6 @@ export default function App() {
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#3F964F]" />
               </span>
               Seja Paciente Associado · Vagas limitadas
-              <span className="ml-1 bg-[#3F964F] text-white text-xs font-black px-2 py-0.5 rounded-full tracking-wide">
-                GRÁTIS
-              </span>
             </div>
           </Reveal>
 
