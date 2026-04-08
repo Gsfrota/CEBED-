@@ -350,14 +350,17 @@ export default function App() {
               className="w-28 sm:w-36 md:w-44 h-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <button
-            onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
-            className="shimmer-btn group inline-flex items-center justify-center gap-1.5 px-4 py-2 sm:px-6 sm:py-2.5 font-semibold text-white text-sm sm:text-base transition-all duration-300 bg-[#3F964F] rounded-full hover:bg-[#2d6b38] hover:shadow-lg hover:shadow-green-900/20"
-          >
-            <span className="hidden sm:inline">Fazer Pré-Cadastro</span>
-            <span className="sm:hidden">Associar-se</span>
-            <ChevronRight size={14} className="transition-transform group-hover:translate-x-0.5" />
-          </button>
+          <div className="relative inline-flex sm:inline-block">
+            <span className="sm:hidden absolute -inset-1 rounded-full bg-[#3F964F]/30 animate-ping-slow pointer-events-none" />
+            <button
+              onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
+              className="shimmer-btn group relative inline-flex items-center justify-center gap-1.5 px-4 py-2 sm:px-6 sm:py-2.5 font-semibold text-white text-sm sm:text-base transition-all duration-300 bg-[#3F964F] rounded-full hover:bg-[#2d6b38] hover:shadow-lg hover:shadow-green-900/20"
+            >
+              <span className="hidden sm:inline">Fazer Pré-Cadastro</span>
+              <span className="sm:hidden font-extrabold tracking-wide">Associar-se</span>
+              <ChevronRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -376,13 +379,16 @@ export default function App() {
         />
 
         <div className="max-w-4xl mx-auto relative z-10">
-          <Reveal direction="up">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-slate-200/70 shadow-sm text-sm font-semibold mb-8 text-slate-600 backdrop-blur-sm">
-              <span className="relative flex h-2.5 w-2.5">
+          <Reveal direction="scale">
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#3F964F]/10 to-emerald-400/10 border border-[#3F964F]/30 text-sm font-bold mb-8 text-[#2d6b38] backdrop-blur-sm">
+              <span className="relative flex h-2.5 w-2.5 shrink-0">
                 <span className="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-[#3F964F] opacity-60" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#3F964F]" />
               </span>
-              Pré-cadastro aberto — vagas com condições especiais
+              Seja Sócio Fundador · Vagas limitadas
+              <span className="ml-1 bg-[#3F964F] text-white text-xs font-black px-2 py-0.5 rounded-full tracking-wide">
+                GRÁTIS
+              </span>
             </div>
           </Reveal>
 
@@ -406,21 +412,30 @@ export default function App() {
           </Reveal>
 
           <Reveal delay={400}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <div className="flex flex-col items-center justify-center gap-3">
               <button
                 onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
                 className="shimmer-btn group inline-flex items-center justify-center gap-2.5 bg-[#3F964F] hover:bg-[#2d6b38] text-white text-base sm:text-lg px-8 py-4 rounded-full font-bold transition-all duration-300 hover:shadow-xl hover:shadow-green-900/25 hover:-translate-y-0.5 w-full sm:w-auto"
               >
-                Fazer Pré-Cadastro
+                Quero ser Sócio Fundador
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </button>
-              <button
-                onClick={() => document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' })}
-                className="group inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 text-base font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-slate-300 bg-white hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto"
-              >
-                Como funciona
-                <ChevronDown size={16} className="transition-transform group-hover:translate-y-0.5" />
-              </button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+                <button
+                  onClick={() => document.getElementById('base-cientifica')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="group inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 text-base font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-[#3F964F]/50 bg-white hover:bg-green-50 transition-all duration-300 w-full sm:w-auto"
+                >
+                  <BookOpen size={16} className="text-[#3F964F]" />
+                  Base Científica
+                </button>
+                <button
+                  onClick={() => document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="group inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 text-base font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-slate-300 bg-white hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto"
+                >
+                  Como funciona
+                  <ChevronDown size={16} className="transition-transform group-hover:translate-y-0.5" />
+                </button>
+              </div>
             </div>
             <p className="mt-5 text-sm text-slate-400 flex items-center justify-center gap-2">
               <ShieldCheck size={14} className="text-[#3F964F]" />
@@ -595,7 +610,7 @@ export default function App() {
 
           {/* Centro de Base Científica — entrada */}
           <Reveal direction="up" delay={450}>
-            <div className="mt-14 max-w-3xl mx-auto">
+            <div className="mt-14 max-w-3xl mx-auto" id="base-cientifica">
               <div className="text-center mb-7">
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#3F964F] uppercase bg-green-50 border border-green-100 px-3 py-1.5 rounded-full mb-3">
                   <BookOpen size={11} />
@@ -873,20 +888,25 @@ export default function App() {
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <Reveal direction="scale">
             <p className="text-green-100 text-sm font-bold tracking-widest uppercase mb-4">
-              Garanta sua vaga
+              Associados Fundadores · Vagas Limitadas
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 tracking-tight">
-              Pronto para dar o primeiro passo?
+              Torne-se Sócio Fundador hoje.
             </h2>
-            <p className="text-green-100 text-base md:text-lg mb-8 leading-relaxed">
-              O pré-cadastro é gratuito, leva menos de 2 minutos e garante as condições especiais de
-              associado fundador. Nossa equipe entrará em contato com as orientações personalizadas.
+            <p className="text-green-100 text-base md:text-lg mb-6 leading-relaxed">
+              O cadastro é gratuito, leva menos de 2 minutos e garante os benefícios exclusivos de
+              associado fundador — sem mensalidade até a abertura oficial.
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-8 text-sm text-green-100/80">
+              <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block" />Orientação médica e jurídica</span>
+              <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block" />Acesso prioritário</span>
+              <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block" />100% gratuito</span>
+            </div>
             <button
               onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
               className="shimmer-btn group inline-flex items-center justify-center gap-2.5 bg-white text-[#3F964F] font-bold px-8 py-4 rounded-full text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
             >
-              Fazer Pré-Cadastro agora
+              Quero ser Sócio Fundador
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </button>
           </Reveal>
