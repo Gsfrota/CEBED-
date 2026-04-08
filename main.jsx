@@ -226,7 +226,7 @@ export default function App() {
     {
       question: 'Quanto custa a associação?',
       answer:
-        'Não há mensalidade até a abertura oficial da associação. Quem realizar o pré-cadastro agora garante condições especiais como associado fundador. Oferecemos também consultoria jurídica gratuita para pessoas de baixa renda que necessitam de apoio legal para viabilizar o tratamento.',
+        'Não há mensalidade até a abertura oficial da associação. Quem realizar o pré-cadastro agora garante condições especiais como paciente associado. Oferecemos também consultoria jurídica gratuita para pessoas de baixa renda que necessitam de apoio legal para viabilizar o tratamento.',
     },
     {
       question: 'O que acontece depois do pré-cadastro?',
@@ -365,7 +365,7 @@ export default function App() {
       </nav>
 
       {/* ═══ 2. HERO ═══ */}
-      <header className="relative pt-28 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col justify-center overflow-hidden">
+      <header className="relative pt-28 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col md:justify-center overflow-hidden">
         <MouseGlow />
 
         {/* Blobs decorativos */}
@@ -385,7 +385,7 @@ export default function App() {
                 <span className="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-[#3F964F] opacity-60" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#3F964F]" />
               </span>
-              Seja Sócio Fundador · Vagas limitadas
+              Seja Paciente Associado · Vagas limitadas
               <span className="ml-1 bg-[#3F964F] text-white text-xs font-black px-2 py-0.5 rounded-full tracking-wide">
                 GRÁTIS
               </span>
@@ -417,7 +417,7 @@ export default function App() {
                 onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
                 className="shimmer-btn group inline-flex items-center justify-center gap-2.5 bg-[#3F964F] hover:bg-[#2d6b38] text-white text-base sm:text-lg px-8 py-4 rounded-full font-bold transition-all duration-300 hover:shadow-xl hover:shadow-green-900/25 hover:-translate-y-0.5 w-full sm:w-auto"
               >
-                Quero ser Sócio Fundador
+                Quero ser Paciente Associado
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </button>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
@@ -888,14 +888,14 @@ export default function App() {
         <div className="max-w-2xl mx-auto text-center relative z-10">
           <Reveal direction="scale">
             <p className="text-green-100 text-sm font-bold tracking-widest uppercase mb-4">
-              Associados Fundadores · Vagas Limitadas
+              Pacientes Associados · Vagas Limitadas
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 tracking-tight">
-              Torne-se Sócio Fundador hoje.
+              Torne-se Paciente Associado hoje.
             </h2>
             <p className="text-green-100 text-base md:text-lg mb-6 leading-relaxed">
               O cadastro é gratuito, leva menos de 2 minutos e garante os benefícios exclusivos de
-              associado fundador — sem mensalidade até a abertura oficial.
+              paciente associado — sem mensalidade até a abertura oficial.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-8 text-sm text-green-100/80">
               <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block" />Orientação médica e jurídica</span>
@@ -906,7 +906,7 @@ export default function App() {
               onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
               className="shimmer-btn group inline-flex items-center justify-center gap-2.5 bg-white text-[#3F964F] font-bold px-8 py-4 rounded-full text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
             >
-              Quero ser Sócio Fundador
+              Quero ser Paciente Associado
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </button>
           </Reveal>
