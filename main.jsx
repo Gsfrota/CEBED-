@@ -406,7 +406,7 @@ export default function App() {
           </Reveal>
 
           <Reveal delay={400}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <div className="flex flex-col items-center justify-center gap-3">
               <button
                 onClick={() => document.getElementById('cadastro')?.scrollIntoView({ behavior: 'smooth' })}
                 className="shimmer-btn group inline-flex items-center justify-center gap-2.5 bg-[#3F964F] hover:bg-[#2d6b38] text-white text-base sm:text-lg px-8 py-4 rounded-full font-bold transition-all duration-300 hover:shadow-xl hover:shadow-green-900/25 hover:-translate-y-0.5 w-full sm:w-auto"
@@ -414,13 +414,22 @@ export default function App() {
                 Fazer Pré-Cadastro
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </button>
-              <button
-                onClick={() => document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' })}
-                className="group inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 text-base font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-slate-300 bg-white hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto"
-              >
-                Como funciona
-                <ChevronDown size={16} className="transition-transform group-hover:translate-y-0.5" />
-              </button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+                <button
+                  onClick={() => document.getElementById('base-cientifica')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="group inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 text-base font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-[#3F964F]/50 bg-white hover:bg-green-50 transition-all duration-300 w-full sm:w-auto"
+                >
+                  <BookOpen size={16} className="text-[#3F964F]" />
+                  Base Científica
+                </button>
+                <button
+                  onClick={() => document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="group inline-flex items-center justify-center gap-2 text-slate-600 hover:text-slate-900 text-base font-semibold px-6 py-4 rounded-full border border-slate-200 hover:border-slate-300 bg-white hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto"
+                >
+                  Como funciona
+                  <ChevronDown size={16} className="transition-transform group-hover:translate-y-0.5" />
+                </button>
+              </div>
             </div>
             <p className="mt-5 text-sm text-slate-400 flex items-center justify-center gap-2">
               <ShieldCheck size={14} className="text-[#3F964F]" />
@@ -595,7 +604,7 @@ export default function App() {
 
           {/* Centro de Base Científica — entrada */}
           <Reveal direction="up" delay={450}>
-            <div className="mt-14 max-w-3xl mx-auto">
+            <div className="mt-14 max-w-3xl mx-auto" id="base-cientifica">
               <div className="text-center mb-7">
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold tracking-widest text-[#3F964F] uppercase bg-green-50 border border-green-100 px-3 py-1.5 rounded-full mb-3">
                   <BookOpen size={11} />
