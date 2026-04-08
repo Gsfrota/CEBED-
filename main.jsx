@@ -365,7 +365,7 @@ export default function App() {
       </nav>
 
       {/* ═══ 2. HERO ═══ */}
-      <header className="relative pt-36 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col md:justify-center overflow-hidden">
+      <header className="relative pt-36 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col overflow-hidden">
         <MouseGlow />
 
         {/* Blobs decorativos */}
@@ -378,7 +378,7 @@ export default function App() {
           style={{ animationDuration: '19s', animationDelay: '-8s' }}
         />
 
-        <div className="max-w-4xl mx-auto relative z-10">
+        <div className="max-w-4xl mx-auto my-auto relative z-10">
           <Reveal direction="scale">
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#3F964F]/10 to-emerald-400/10 border border-[#3F964F]/30 text-sm font-bold mb-8 text-[#2d6b38] backdrop-blur-sm">
               <span className="relative flex h-2.5 w-2.5 shrink-0">
