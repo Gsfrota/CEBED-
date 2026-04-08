@@ -365,18 +365,20 @@ export default function App() {
       </nav>
 
       {/* ═══ 2. HERO ═══ */}
-      <header className="relative pt-36 pb-16 md:pt-44 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col overflow-hidden">
+      <header className="relative pt-36 pb-16 md:pt-48 md:pb-28 px-4 text-center min-h-[88vh] md:min-h-[90vh] flex flex-col">
         <MouseGlow />
 
         {/* Blobs decorativos */}
-        <div
-          className="absolute top-[12%] left-[6%] w-72 h-72 bg-[#3F964F]/8 animate-morph will-change-transform pointer-events-none -z-10"
-          style={{ animationDuration: '15s' }}
-        />
-        <div
-          className="absolute bottom-[10%] right-[6%] w-80 h-80 bg-emerald-300/7 animate-morph will-change-transform pointer-events-none -z-10"
-          style={{ animationDuration: '19s', animationDelay: '-8s' }}
-        />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+          <div
+            className="absolute top-[12%] left-[6%] w-72 h-72 bg-[#3F964F]/8 animate-morph will-change-transform"
+            style={{ animationDuration: '15s' }}
+          />
+          <div
+            className="absolute bottom-[10%] right-[6%] w-80 h-80 bg-emerald-300/7 animate-morph will-change-transform"
+            style={{ animationDuration: '19s', animationDelay: '-8s' }}
+          />
+        </div>
 
         <div className="max-w-4xl mx-auto my-auto relative z-10">
           <Reveal direction="scale">
