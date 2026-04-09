@@ -381,16 +381,6 @@ export default function App() {
         </div>
 
         <div className="max-w-4xl mx-auto my-auto relative z-10">
-          <Reveal direction="scale">
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#3F964F]/10 to-emerald-400/10 border border-[#3F964F]/30 text-sm font-bold mb-8 text-[#2d6b38] backdrop-blur-sm">
-              <span className="relative flex h-2.5 w-2.5 shrink-0">
-                <span className="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-[#3F964F] opacity-60" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#3F964F]" />
-              </span>
-              Seja Paciente Associado · Vagas limitadas
-            </div>
-          </Reveal>
-
           <Reveal delay={120}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-6 md:mb-8 leading-[1.08] tracking-tight">
               Cannabis medicinal com{' '}
